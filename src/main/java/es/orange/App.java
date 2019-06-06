@@ -14,7 +14,8 @@ public class App {
 		String[] nums_arr = nums.split(",");
 		int suma = 0;
 		for (String unNum : nums_arr) {
-			suma += unNum.trim().equals("") ? 0 : Integer.parseInt(unNum.trim());
+			int numToAdd=unNum.trim().equals("") ? 0:Integer.parseInt(unNum.trim());
+			suma += numToAdd>=1000?0:numToAdd;
 		}
 		return suma;
 
