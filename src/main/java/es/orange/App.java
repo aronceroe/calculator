@@ -17,6 +17,7 @@ public class App {
 			int numToAdd=unNum.trim().equals("") ? 0:Integer.parseInt(unNum.trim());
 			suma += numToAdd>=1000?0:numToAdd;
 		}
+
 		return suma;
 
 	}
